@@ -32,6 +32,7 @@ class App < Sinatra::Base
   
   # operation
   get '/:operation/:number1/:number2' do
+    binding.pry
     case operation = params[:operation]
     when "add"
     
