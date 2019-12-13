@@ -32,7 +32,7 @@ class App < Sinatra::Base
   
   # operation
   get '/:operation/:number1/:number2' do
-    case operation = params[:operation]
+    case @operation = params[:operation]
     when "add"
     
     # @num1 = params[:number1].to_i
