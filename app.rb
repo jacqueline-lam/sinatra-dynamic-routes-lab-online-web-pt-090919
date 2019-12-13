@@ -37,7 +37,7 @@ class App < Sinatra::Base
       '+'.to_sym
     when 'minus'
       '-'.to_sym
-      when
+    when 'multiply'
     
     # @num1 = params[:number1].to_i
     # @num2 = params[:number2].to_i
