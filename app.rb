@@ -35,7 +35,9 @@ class App < Sinatra::Base
     case @operation = params[:operation]
     when 'add'
       '+'.to_sym
-    when
+    when 'minus'
+      '-'.to_sym
+      when
     
     # @num1 = params[:number1].to_i
     # @num2 = params[:number2].to_i
