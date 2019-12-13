@@ -30,7 +30,7 @@ class App < Sinatra::Base
     "#{@word1} #{@word2} #{@word3} #{@word4} #{@word5}."
   end
   
-  # operation
+  # Operation
   get '/:operation/:number1/:number2' do
     case @operation = params[:operation]
     when 'add'
