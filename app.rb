@@ -37,7 +37,6 @@ class App < Sinatra::Base
     
     @num1 = params[:number1].to_i
     @num2 = params[:number2].to_i
-    # have to change operation string to actual operation
     @result = 
   end
 end
