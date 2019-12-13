@@ -31,6 +31,10 @@ class App < Sinatra::Base
   end
   
   # Operation
+    # adds two numbers together
+    # subtracts the second number from the first
+    # multiplies two numbers together
+    # divides the first number by the second number
   get '/:operation/:number1/:number2' do
     case @operation = params[:operation]
     when 'add'
