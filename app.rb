@@ -30,16 +30,14 @@ class App < Sinatra::Base
     "#{@word1} #{@word2} #{@word3} #{@word4} #{@word5}."
   end
   
-  # subtract two numbers together
-  # subtracts the second number from the first
+  # operation
   get '/:operation/:number1/:number2' do
     case operation = params[:operation]
     when "add"
-      @operation = +
+    
     @num1 = params[:number1].to_i
     @num2 = params[:number2].to_i
-    @result = (@num2 - @num1).to_s
+    # have to change operation string to actual operation
+    @result = 
   end
-  
-  GET /:operation/:number1/:number2
 end
