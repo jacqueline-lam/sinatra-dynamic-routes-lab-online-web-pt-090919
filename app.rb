@@ -29,6 +29,7 @@ class App < Sinatra::Base
     "#{@word1} #{@word2} #{@word3} #{@word4} #{@word5}"
   end
   
+  # concatenates the words and adds a period
   get '/:operation/:number1/:number2' do
     
   end
