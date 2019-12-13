@@ -33,9 +33,10 @@ class App < Sinatra::Base
   # subtract two numbers together
   # subtracts the second number from the first
   get '/:operation/:number1/:number2' do
+    @operation = params[:operation]
     @num1 = params[:number1].to_i
     @num2 = params[:number2].to_i
-    @operation = (@num2 - @num1).to_s
+    @result = (@num2 - @num1).to_s
   end
   
   GET /:operation/:number1/:number2
