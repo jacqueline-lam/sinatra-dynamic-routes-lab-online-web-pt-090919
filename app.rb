@@ -7,7 +7,7 @@ class App < Sinatra::Base
     # puts @name
   end
   
-  get '/square/:number' do
+  get "/square/:number" do
     @square = params[:number].to_i**2
     puts @square.to_s
   end
