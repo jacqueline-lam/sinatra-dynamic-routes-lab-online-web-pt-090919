@@ -12,8 +12,8 @@ class App < Sinatra::Base
     # puts @square would return 16 #=> nil; p @square could work
   end
   
-  # get '/say/:number/:phrase' do
-  # end
+  get '/say/:number/:phrase' do
+  end
   
   # get '/say/:word1/:word2/:word3/:word4/:word5' do
   # end
