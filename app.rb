@@ -34,13 +34,13 @@ class App < Sinatra::Base
   get '/:operation/:number1/:number2' do
     case @operation = params[:operation]
     when 'add'
-      '+'.to_sym
+      @operation = '+'.to_sym
     when 'minus'
-      '-'.to_sym
+      @operation = '-'.to_sym
     when 'multiply'
-      '*'.to_sym
+      @operation = '*'.to_sym
     when 'divide'
-      '/'.to_sym
+      @operation = '/'.to_sym
     end
     
     @num1 = params[:number1].to_i
