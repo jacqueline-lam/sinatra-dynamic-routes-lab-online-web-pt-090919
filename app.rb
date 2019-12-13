@@ -12,6 +12,8 @@ class App < Sinatra::Base
     # puts @square would return 16 #=> nil; p @square could work
   end
   
+  # accepts a number and a phrase and returns that phrase in 
+  # a single string the number of times given
   get '/say/:number/:phrase' do
     @number = params[:number].to_i
     @phrase = params[:phrase]
