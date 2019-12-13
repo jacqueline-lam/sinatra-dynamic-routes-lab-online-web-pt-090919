@@ -42,7 +42,7 @@ class App < Sinatra::Base
     when 'divide'
       @operation = '/'.to_sym
     end
-    # binding.pry
+
     @num1 = params[:number1].to_i
     @num2 = params[:number2].to_i
     @result = @num1.send(@operation, @num2).to_s
