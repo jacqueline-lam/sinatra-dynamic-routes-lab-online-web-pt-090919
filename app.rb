@@ -33,11 +33,11 @@ class App < Sinatra::Base
   # operation
   get '/:operation/:number1/:number2' do
     binding.pry
-    case operation = params[:operation]
-    when "add"
+    # case operation = params[:operation]
+    # when "add"
     
-    @num1 = params[:number1].to_i
-    @num2 = params[:number2].to_i
-    @result = 
+    # @num1 = params[:number1].to_i
+    # @num2 = params[:number2].to_i
+    # @result = 
   end
 end
