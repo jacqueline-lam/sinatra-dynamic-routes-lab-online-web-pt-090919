@@ -9,7 +9,7 @@ class App < Sinatra::Base
   
   get "/square/:number" do
     @square = (params[:number].to_i**2).to_s
-    # puts @square would return 16 #=> nil
+    # puts @square would return 16 #=> nil; p @square could work
   end
   
   # get '/say/:number/:phrase' do
