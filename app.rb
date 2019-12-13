@@ -18,7 +18,7 @@ class App < Sinatra::Base
     binding.pry
     # @number = params[:number].to_i
     # @phrase = params[:phrase]
-    # @result = @phase * @number
+    # @result = @number.times do {|phrase| puts phrase}
   end
   
   # get '/say/:word1/:word2/:word3/:word4/:word5' do
