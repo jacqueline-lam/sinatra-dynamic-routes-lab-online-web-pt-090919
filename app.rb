@@ -36,4 +36,6 @@ class App < Sinatra::Base
     @num2 = params[:number2].to_i
     @sum = (@num1 + @num2).to_s
   end
+  
+  GET /:operation/:number1/:number2
 end
